@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>cv fredy</title>
-		<link rel='stylesheet' href='..\stylesheets\style.css' />
+		<link rel='stylesheet' href='..\stylesheets\style2.css' />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
@@ -31,21 +31,32 @@
 
 	<div class="main-container">
 
-		<div class="foto">
-			<div class="circulo"> 
-				<img class="fotoFreddy" src="..\images\bookIcon.png" alt="foto de fredi">
-			</div>
+		<div class="formulario">
+			<form class="form" action="/my-handling-form-page" method="post">
+				<ul>
+				 <li>
+				   <label for="name">Nombre:</label>
+				   <input type="text" id="name" name="user_name">
+				 </li>
+				 <li>
+				   <label for="mail">Correo electrónico:</label>
+				   <input type="email" id="mail" name="user_mail">
+				 </li>
+				 <li>
+				   <label for="msg">Mensaje:</label>
+				   <textarea id="msg" name="user_message"></textarea>
+				 </li>
+				</ul>
+			   </form>
+			   <div class="boton">
+				<button type="button">¡Contáctame!</button>
+			   </div>
+			   
+			
 		</div>
 		
-		<section class="text">
-			<p>Bachiller en Ciencias graduado en el colegio "Liceo Naval "Cmdte. Rafael Andrade Lalama" en el año 2020.
-			</p>
-			<p>Cursando título de tercer nivel en la universidad "Escuela Superior Politécnica del Litoral"
-				sobre ingeniería en Ciencias de la Computación en la facultad de Ingeniería en Electricidad y Computación.
-			</p>
-			<p>
-				Certificado de nivel C1 en Inglés por medio de la institución EF International Language Centers, 2022.
-			</p>
+		<section >
+			<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15948.262144712055!2d-79.9064859!3d-2.1284925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x515c4f92dd387618!2sC.C.%20Riocentro%20Norte!5e0!3m2!1ses!2sec!4v1667184985654!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</section>
 	
 	</div>

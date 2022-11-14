@@ -1,3 +1,37 @@
 *{
-    background-color: lightcyan;
+    background-color: azure;
+}
+
+.containerTabla{
+    width: 80%;
+}
+
+.tabla-datos {
+    justify-content: center;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabla-datos th, .tabla-datos td {
+    padding: 12px 15px;
+}
+
+.tabla-datos tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla-datos tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabla-datos tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.tabla-datos tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
 }

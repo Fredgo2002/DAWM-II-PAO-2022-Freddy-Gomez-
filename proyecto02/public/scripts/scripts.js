@@ -7,13 +7,15 @@ let cargarDatos = () => {
       //photos = data.photos
       for (photo of data["photos"]){
         let id= photo.id
-        let sol= photo.sol
+        let roverName= photo.rover.name
+        let roverCam = photo.camera.name
         let img = photo.img_src
         let date = photo.earth_date
         let plantilla = 
         `<tr>
           <td>${id}</td>
-          <td>${sol}</td>
+          <td>${roverName}</td>
+          <td>${roverCam}</td>
           <td><img src = "${img}" width = 250px><img></td>
           <td>${date}</td>
          </tr>`

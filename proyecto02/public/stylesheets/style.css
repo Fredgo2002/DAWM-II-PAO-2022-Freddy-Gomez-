@@ -1,15 +1,18 @@
 *{
     background-color: azure;
 }
-
+h1{
+    text-align: center;
+}
 .containerTabla{
-    width: 80%;
+    width: 100%;
+    text-align: center;
 }
 
 .tabla-datos {
     justify-content: center;
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 0 auto;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;

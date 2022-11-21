@@ -14,7 +14,7 @@ let cargarDatos = () => {
         `<tr>
           <td>${id}</td>
           <td>${sol}</td>
-          <td>${img}</td>
+          <td><img src = "${img}" width = 250px><img></td>
           <td>${date}</td>
          </tr>`
         document.querySelector(".containerTabla .tabla-datos .datos").innerHTML += plantilla

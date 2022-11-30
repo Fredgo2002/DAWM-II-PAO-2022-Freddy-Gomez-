@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Mazer Admin Dashboard</title>
+    <title>Proyecto 02 Freddy Gómez</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/public/css/charts.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
 </head>
 
 <body>
@@ -26,6 +28,7 @@
                     <div class="d-flex justify-content-between">
                         <div class="logo">
                             <a href="index.html">Freddy Gómez</a>
+                            <a href="index.html">Proyecto 2</a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -46,7 +49,7 @@
             </header>
 
             <div class="page-heading">
-                <h3>Profile Statistics</h3>
+                <h3>Gráficos y datos de personajes de One Piece</h3>
             </div>
             <div class="page-content">
                 <section class="row">
@@ -57,16 +60,17 @@
                                 <div class="card">
                                     <div class="bg-secondary text-center rounded p-4">
                                         <div class="d-flex align-items-center justify-content-between mb-4">
-                                          <h6 class="mb-0">Peliculas</h6>
-                                          <select class="navbar-dark" id="tipo" name=""></select>
-                                          <a href="">Mostrar Todo</a>
+                                          <h6 class="mb-0">Personajes con Fruta del diablo</h6>
+                                          <select class="navbar-white" id="tipo" name="">
+                                          </select>
+                                          <a href=""></a>
                                         </div>
                                         <div class="table-responsive">
                                           <table
                                             class="table text-start align-middle table-bordered table-hover mb-0"
                                           >
                                             <thead>
-                                              <tr class="text-black">
+                                              <tr class="text-white">
                                                 <th scope="col">Nombre</th>
                                                 <th scope="col">Estatura</th>
                                                 <th scope="col">Edad</th>
@@ -89,80 +93,31 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-xl-4">
+                            <div class="col-12">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <h4>Profile Visit</h4>
+                                    <div class="bg-secondary text-center rounded p-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <canvas id = "chart1"></canvas>
+                                        </div>
+                                        
                                     </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="bi text-primary" width="32" height="32" fill="blue"
-                                                        style="width:10px">
-                                                        <use
-                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
-                                                    </svg>
-                                                    <h5 class="mb-0 ms-3">Europe</h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <h5 class="mb-0">862</h5>
-                                            </div>
-                                            <div class="col-12">
-                                                <div id="chart-europe"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="bi text-success" width="32" height="32" fill="blue"
-                                                        style="width:10px">
-                                                        <use
-                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
-                                                    </svg>
-                                                    <h5 class="mb-0 ms-3">America</h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <h5 class="mb-0">375</h5>
-                                            </div>
-                                            <div class="col-12">
-                                                <div id="chart-america"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="d-flex align-items-center">
-                                                    <svg class="bi text-danger" width="32" height="32" fill="blue"
-                                                        style="width:10px">
-                                                        <use
-                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
-                                                    </svg>
-                                                    <h5 class="mb-0 ms-3">Indonesia</h5>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <h5 class="mb-0">1025</h5>
-                                            </div>
-                                            <div class="col-12">
-                                                <div id="chart-indonesia"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12">
                     
                         <div class="card">
-                            <div class="card-header">
-                                <h4>Visitors Profile</h4>
-                            </div>
-                            <div class="card-body">
-                                <div id="chart-visitors-profile"></div>
+                            <div class="bg-secondary text-center rounded p-4">
+                                <div class="d-flex flex-column align-items-center justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="mb-0">Estaturas de los personajes</h6>
+                                      </div>
+                                    <canvas id = "chart2"></canvas>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

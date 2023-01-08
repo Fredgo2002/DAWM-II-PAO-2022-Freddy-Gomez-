@@ -1,0 +1,45 @@
+.container-fluid{
+    background-color: #DFEFFF;
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+
+.container{
+    margin-top: 100px;
+    background-color: white;
+    margin: 7%;
+    padding: 25px;
+    text-align: justify;
+    width: 80%
+}
+
+.container-md{
+    align-items: center;
+    display: block;
+    text-align: center;
+    height: auto;
+    font-size: 20px;
+    -moz-text-size-adjust: auto;
+}
+
+.container-foto{
+    overflow: hidden;
+    align-content: center;
+    margin: 0px auto;
+}
+
+.titulo{
+font-family: Comic Sans MS; 
+font-weight:bold; 
+font-size: 30px; 
+color: #EBD758; 
+text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+
+}
+
+.container-titulo{
+    margin: 0px auto;
+    margin-top: 50px;
+}

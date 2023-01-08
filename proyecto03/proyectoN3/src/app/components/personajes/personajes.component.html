@@ -1,0 +1,74 @@
+<main class="container-fluid">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Proyecto 3</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link link-dark" aria-current="page">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            Resumen
+            </a>
+        </li>
+        <li>
+            <a routerLink="/personajes" class="nav-link active">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            Personajes
+            </a>
+        </li>
+        <li>
+            <a routerLink="/frutas" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+            Frutas
+            </a>
+        </li>
+        <li>
+            <a routerLink="/peliculas" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+            Peliculas
+            </a>
+        </li>
+        </ul>
+        <hr>
+        
+    </div>
+    <div class="container-md">
+        <div>
+            <img src="../../../assets/images/banner.jpg" alt="banner" style="width: 100%; height: 100%;">
+        </div>
+        <div class="container-titulo">
+            <span class="titulo">One PiecePedia: Personajes</span>
+        </div>
+        <div class="row">
+            <div id="header" class="col-12"></div>
+            <div id="content" class="col-12">
+                <div class="row mt-3">
+                    
+                    <!-- Etiquetas a repetir - INICIO -->
+                    <div class="col-6 col-md-2" *ngFor="let personaje of personajes">
+                        <div class="card border-3">
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <div class="card-body">
+                                        <h3 class="card-title fw-bold text-center">
+                                            <a >{{personaje.french_name}}</a><br>
+                                            <a >Ocupacion: {{personaje.job}}</a><br>
+                                            <a >Edad: {{personaje.age}}</a><br>
+                                            <a >Bounty: {{personaje.bounty}}</a><br>
+
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Etiquetas a repetir - FIN -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>

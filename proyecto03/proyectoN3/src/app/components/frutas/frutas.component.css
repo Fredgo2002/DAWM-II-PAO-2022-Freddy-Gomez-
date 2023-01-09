@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     display: flex;
+    overflow: auto;
     
 }
 
@@ -44,4 +45,8 @@ h3{
     .container-titulo{
         margin: 0px auto;
         margin-top: 50px;
+    }
+
+    a{
+        font-size: x-small;
     }
